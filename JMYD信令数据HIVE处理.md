@@ -1,6 +1,3 @@
-# spark_with_example
-江门移动项目spark代码
-
 #hive语句
 ##1将查询保存至路径
 insert overwrite directory '/data/jm/result/user_id' 
