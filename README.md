@@ -1,9 +1,11 @@
-# spark_with_example
-江门移动项目spark代码
 
-#hive语句
-##1将查询保存至路径
-insert overwrite directory '/data/jm/result/user_id' 
+江门移动项目Hive代码
+
+=====
+
+# hive语句
+## 1.将查询保存至路径
+insert overwrite directory '/data/jm/result/user_id' <br>
 row format delimited fields terminated by ',' 
 select distinct(t.user_id) from jm_source t ,jm_jmda_station j 
 where t.station = j.station
